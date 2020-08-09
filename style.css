@@ -1,0 +1,72 @@
+* {
+  font-family: "Handlee", cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://wallpaperplay.com/walls/full/1/0/4/37243.jpg");
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.header {
+  position: relative;
+  background-image: url("formbg.jpg");
+  background-size: 1000px 69px;
+}
+
+.pin-icon {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  width: 50px;
+  height: 50px;
+}
+
+.task-note {
+  background-image: url("notebg.png");
+  background-size: 270px 340px;
+  overflow-y: scroll;
+  height: 340px;
+  width: 270px;
+  position: relative;
+  z-index: 99999;
+}
+
+.task-note .delete-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  right: 35px;
+  z-index: 999999;
+}
+
+.task-note .task-text {
+  height: 150px;
+  width: 200px;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  font-size: 20px;
+}
+
+.task-note .task-text p {
+  text-align: left;
+  padding: 9px;
+}
+
+.task-note .task-footer {
+  font-size: 15px;
+}
+/*# sourceMappingURL=style.css.map */

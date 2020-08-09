@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/06f0ba9fc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/889/889669.svg">
+    <title>Ninio Memos</title>
+</head>
+
+<body>
+    <div class="container body-container ">
+        <div class="container d-flex align-item-center justify-content-center mt-3">
+            <h1 class="display-4">
+                <i class="far fa-sticky-note"></i> My<span class="text-danger">Task</span>Board
+            </h1>
+        </div>
+        <div id="header" class="header container border border-dark rounded mt-1 pb-1">
+            <img class="pin-icon" src="https://www.nicepng.com/png/full/840-8407391_pushpin-icon-push-pin-emoji.png" />
+            <div class="row justify-content-center mt-3">
+                <form class="create-task-form">
+                    <div class="form-row d-flex justify-content-around">
+                        <h2 class="font-weight-bold"><u>Content</u></h2>
+                        <h2 class="font-weight-bold"><u>Dead-line</u></h2>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label class="h4 font-weight-bold" for="title">Title</label>
+                            <input type="text" id="event-title" placeholder="Enter task title here..."
+                                class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="h4 font-weight-bold" for="date">Date</label>
+                            <input type="date" id="date-input" class="form-control"></div>
+                    </div>
+                    <div class="form-row mt-2">
+                        <div class="form-group col-md-6">
+                            <label class="h4 font-weight-bold" for="task-text-input">Details</label>
+                            <br>
+                            <textarea class="form-control" name="task-text-input"
+                                placeholder=" Enter task discription here..." id="task-text-input" cols="25"
+                                rows="2"></textarea></div>
+                        <div class="form-group col-md-6">
+                            <label class="h4 font-weight-bold" for="time">Time</label>
+                            <input type="time" id="time-input" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row d-flex justify-content-around">
+                        <div class="form-group">
+                            <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
+                        </div>
+                        <div class="form-group">
+                            <button type="reset" class="btn btn-danger">Empty Fields</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container d-flex flex-row justify-content-left align-content-between flex-wrap" id="task-board">
+        </div>
+    </div>
+</body>
+
+</html>
